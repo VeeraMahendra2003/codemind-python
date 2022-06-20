@@ -1,16 +1,16 @@
-def rev(n):
+def rev(m):
     s=0
-    while(n):
-        d=n%10
+    while m:
+        d=m%10
         s=(s*10)+d
-        n=n//10
+        m=m//10
     return s
-n=int(input())
-t=n*n
-k=rev(n)
-z=k*k
-x=rev(z)
-if t==x:
-    print("True")
+n=int(input())  
+t=n**2          
+a=rev(n)        
+x=a**2          
+z=rev(x)
+if t==z:
+     print(True)
 else:
-    print("False")
+    print(False)
