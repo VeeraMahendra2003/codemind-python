@@ -1,3 +1,3 @@
 n=input()
-m=n.split()
-print(*m[::-1])
+s=n.split()
+print(*s[::-1])
