@@ -1,11 +1,11 @@
 n=input()
-c=n.split()
-l=[]
-for i in range(len(c)):
+s=n.split()
+l=list(s)
+k=[]
+for i in range(len(l)):
     if i%2==0:
-        l.append(c[i][::-1])
+        m=l[i][::-1]
+        k.append(m)
     else:
-        l.append(c[i])
-print(*l)
-        
-        
+        k.append(l[i])
+print(*k)
