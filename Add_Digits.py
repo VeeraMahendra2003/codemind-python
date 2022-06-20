@@ -1,12 +1,16 @@
-def add(n):
-    s=0
-    while n:
-        d=n%10
-        s=s+d
-        n=n//10
-    return s
+def add(s):
+    c=0
+    while s:
+        d=s%10
+        c=c+d
+        s=s//10
+    return c
 n=int(input())
-k=add(n)
-x=add(k)
-y=add(x)
-print(y)
+s=0
+while n:
+    d=n%10
+    s=s+d
+    n=n//10
+t=add(s)
+z=add(t)
+print(z)
