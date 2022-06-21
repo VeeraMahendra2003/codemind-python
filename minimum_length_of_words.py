@@ -1,7 +1,7 @@
-n=input()
+n=input().split(" ")
+n=list(n)
 l=[]
-c=n.split()
-for i in c:
+for i in n:
     m=len(i)
     l.append(m)
 print(min(l))
