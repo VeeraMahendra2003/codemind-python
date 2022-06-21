@@ -1,7 +1,7 @@
-n=input()
-c=n.split()
+n=input().split(" ")
 l=[]
-for i in range(len(c)):
-    l.append(min(c[i]))
-    l.append(max(c[i]))
+for i in n:
+    l.append(min(i))
+    l.append(max(i))
 print(*l)
+    
