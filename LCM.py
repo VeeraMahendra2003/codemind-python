@@ -1,9 +1,8 @@
-def hcf(n,m):
-    if m==0:
-        return n
-    else:
-        return hcf(m,n%m)
+def lcm(a,b):
+    c=b
+    while True:
+        if c%a==0 and c%b==0:
+            return c
+        c+=1
 n,m=map(int,input().split())
-k=hcf(n,m)
-lcm=(n*m)/k
-print(int(lcm))
+print(lcm(n,m))
