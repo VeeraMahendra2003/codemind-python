@@ -1,9 +1,8 @@
-num=input()
-num=list(num)
-for i in range(0,len(num)):
-    if num[i]=='6':
-        num[i]='9'
-        break;
-num="".join(num)
-print(num)
-    
+n=input()
+l=list(n)
+for i in range(0,len(l)):
+    if l[i]=='6':
+       l[i]='9'
+       break
+d=''.join(l)
+print(d)
